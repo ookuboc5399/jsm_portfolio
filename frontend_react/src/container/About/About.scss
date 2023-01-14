@@ -1,0 +1,14 @@
+.app__profiles {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.app__profile-item {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
