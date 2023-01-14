@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { AppWrap } from '../../wrapper';
 import { images } from "../../constants";
 import './Header.scss';
 
@@ -39,7 +40,7 @@ const Header = () => {
       className="app__header-circles"
       >
         {[images.flutter, images.redux, images.sass].map((circle, index) => (
-            <div className="app__flex">
+            <div className="app__flex" key={`circle-${index}`}>
                 <img src={circle} alt="profile_bg" />
             </div>
         ))}
@@ -48,4 +49,6 @@ const Header = () => {
   );
 };
 
-export default Header;
+// export default Header;
+
+export default AppWrap(Header,'home');
